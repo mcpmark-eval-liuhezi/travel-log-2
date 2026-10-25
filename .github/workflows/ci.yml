@@ -1,0 +1,13 @@
+name: Travel Log CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  echo-train:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo recommended train
+        run: echo "Recommended train: G9"
